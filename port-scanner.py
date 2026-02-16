@@ -1,5 +1,7 @@
 import socket
 target = input("Enter IP: ")
+start = int(input("Start port: "))
+end = int(input("End port: "))
 for port in range(1, 1025):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.settimeout(0.5)
